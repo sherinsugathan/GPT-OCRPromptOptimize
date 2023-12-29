@@ -7,7 +7,7 @@ The scripts in this project can be used for finding an optimized prompt for corr
 3. Obtain your OpenAPI key and set it to your local environment variable `OPENAI_API_KEY`
 4. An example run script:
 
- `python src/main.py 'cjeu-35-turbo-instruct' 'Please note that the text to be corrected is in French. Fix spelling mistakes, do not add/remove words, make consistent word spacing, add missing spaces, fix font case issues within words, fix numbering issues, make consistent line breaks for the following text:'`
+ ```python src/main.py 'cjeu-35-turbo-instruct' 'Please note that the text to be corrected is in French. Fix spelling mistakes, do not add/remove words, make consistent word spacing, add missing spaces, fix font case issues within words, fix numbering issues, make consistent line breaks for the following text:'```
 
 ## Results
 After running the script on input data, 
