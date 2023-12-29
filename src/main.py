@@ -1,3 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Script Name: main.py
+Description: This script is designed to run a specific GPT prompt for a specific engine to generate the .
+Author: Sherin Sugathan
+Created Date: 26-12-2023
+Last Modified: 29-12-2023
+
+Usage: python script_name.py [arguments]
+
+License: GPL
+"""
+
 import os
 import csv
 import pandas as pd
@@ -184,9 +199,9 @@ for fileName in file_list:
 # Plotting
 df = pd.read_csv(distance_result_file, delim_whitespace=True, header=None)
 # Assigning columns to variables
-X = df.iloc[:, 0]   # First column
-Y1 = df.iloc[:, 2]  # Third column
-Y2 = df.iloc[:, 3]  # Fourth column
+X = df.iloc[:, 0]
+Y1 = df.iloc[:, 2]
+Y2 = df.iloc[:, 3]
 
 # Plotting Y1 and Y2 over X
 plt.figure(figsize=(30, 6))
@@ -194,7 +209,7 @@ plt.plot(X, Y1, label='Google Vision', color='blue', linestyle='-', marker='o')
 plt.plot(X, Y2, label='Adobe+GPT', color='green', linestyle='-', marker='o')
 plt.xlabel('X')
 plt.ylabel('Editing Distance')
-plt.title('Normalized Levenshtein Distance comparison between Google Vision and Adobe+GPT')
+plt.title('Normalized Levenshtein Distance comparison between Google Vision and Adobe+GPT (' + str(engineSelection) + ')')
 plt.legend()
 even_X_labels = [x for x in X if x % 2 == 0]
 plt.xticks(even_X_labels)
