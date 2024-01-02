@@ -1,5 +1,5 @@
 # GPT-OCR Prompt Optimize
-This project's scripts are designed to optimize prompts for enhancing OCR engine outputs. The raw OCR data is stored in the `/data/` directory. Each text file within this folder corresponds to a single page with a multi-column layout, written in French. Executing `main.py` produces a comparative analysis of the normalized Levenshtein distance for both Google Vision and Adobe+GPT, presented through textual and graphical outputs. The process of crafting a more accurate prompt is currently manual, relying on a trial-and-error approach. Below is an illustrative baseline result for the `cjeu-4` engine, showcasing the prompt utilized in our sample cases.
+This project's scripts are designed to optimize prompts for enhancing OCR engine outputs. The raw OCR data is stored in the `/data/` directory. Each text file within `/data/fr/` corresponds to a single page with a multi-column layout, written in French. Executing `main.py` produces a comparative analysis of the normalized Levenshtein distance for both Google Vision and Adobe+GPT, presented through textual and graphical outputs. The process of crafting a more accurate prompt is currently manual, relying on a trial-and-error approach. Below is an illustrative baseline result for the `cjeu-4` engine, showcasing the prompt utilized in our sample cases.
 
 ![Alt text](baselineResult.png)
 
